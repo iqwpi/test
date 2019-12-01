@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script >
+
+var arr= new Array();
+
+function so(){
+		var inps = document.getElementsByTagName("input");
+
+        arr.push(inps[0].value);
+
+        arr.sort(function(a,b){
+                    return a-b;
+        });
+  document.getElementById("number").innerHTML =arr;
+  document.getElementById("text1").value="";
+
+}
+</script>
+
+        <input type="text" id="text1"/><br />
+
+        <input type="button" onclick="so()" value="排序"/><br />
+
+        <p id="number"></p>
+
+
+</body>
+</html>
